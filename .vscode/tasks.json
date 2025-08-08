@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "dotnet",
+            "task": "build",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "build"
+        },
+        {
+            "label": "build-release",
+            "type": "shell",
+            "command": "dotnet build \"${workspaceFolder}/2B-IP.Backend/2B-IP.Backend.csproj\" --configuration Release",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "type": "dotnet",
+            "task": "watch 2B-IP.Backend",
+            "file": "G:\\Hobby\\2B-IPeshechka\\2B-IP.Backend\\2B-IP.Backend.csproj",
+            "problemMatcher": [],
+            "label": "dotnet: watch 2B-IP.Backend"
+        }
+    ]
+}
