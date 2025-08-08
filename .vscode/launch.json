@@ -42,6 +42,26 @@
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/2B-IP.Backend/Views"
             }
+        },
+        {
+            "name": "2B-IP.Client (Debug, Windows)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-client",
+            "program": "${workspaceFolder}/2B-IP.Client/bin/Debug/net9.0-windows10.0.19041.0/2B-IP.Client.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}/2B-IP.Client",
+            "stopAtEntry": false
+        },
+        {
+            "name": "2B-IP.Client (Release, Windows)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-release-client",
+            "program": "${workspaceFolder}/2B-IP.Client/bin/Release/net9.0-windows10.0.19041.0/2B-IP.Client.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}/2B-IP.Client",
+            "stopAtEntry": false
         }
     ]
 }

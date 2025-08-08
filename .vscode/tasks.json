@@ -21,6 +21,20 @@
             "file": "G:\\Hobby\\2B-IPeshechka\\2B-IP.Backend\\2B-IP.Backend.csproj",
             "problemMatcher": [],
             "label": "dotnet: watch 2B-IP.Backend"
+        },
+		{
+            "label": "build-client",
+            "type": "shell",
+            "command": "dotnet build \"${workspaceFolder}/2B-IP.Client/2B-IP.Client.csproj\" --configuration Debug",
+            "group": "build",
+            "problemMatcher": []
+        },		
+		{
+            "label": "build-release-client",
+            "type": "shell",
+            "command": "dotnet build \"${workspaceFolder}/2B-IP.Client/2B-IP.Client.csproj\" --configuration Release",
+            "group": "build",
+            "problemMatcher": []
         }
     ]
 }
